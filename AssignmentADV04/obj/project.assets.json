@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mahmoud Rayan\\source\\repos\\AssignmentADV04\\AssignmentADV04\\AssignmentADV04.csproj",
+      "projectUniqueName": "C:\\Users\\Mahmoud Rayan\\Desktop\\Assignments\\OOP\\Advanced\\ADV04\\AssignmentADV04\\AssignmentADV04.csproj",
       "projectName": "AssignmentADV04",
-      "projectPath": "C:\\Users\\Mahmoud Rayan\\source\\repos\\AssignmentADV04\\AssignmentADV04\\AssignmentADV04.csproj",
+      "projectPath": "C:\\Users\\Mahmoud Rayan\\Desktop\\Assignments\\OOP\\Advanced\\ADV04\\AssignmentADV04\\AssignmentADV04.csproj",
       "packagesPath": "C:\\Users\\Mahmoud Rayan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Mahmoud Rayan\\source\\repos\\AssignmentADV04\\AssignmentADV04\\obj\\",
+      "outputPath": "C:\\Users\\Mahmoud Rayan\\Desktop\\Assignments\\OOP\\Advanced\\ADV04\\AssignmentADV04\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
