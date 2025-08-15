@@ -13,7 +13,7 @@ namespace Demo
             //Fun01()(); 
             #endregion
 
-            #region Hashtables
+            #region Non-Generic Hashtables
             // Collection : Built-in DS in C#
 
             // Non-Generic Hashtables : Hashtable
@@ -31,6 +31,28 @@ namespace Demo
             //    Console.WriteLine(item);
             //} 
             #endregion
+
+            #region Dictionary
+            //Dictionary<string, long> phoneBook = new Dictionary<string, long>();
+            //phoneBook.Add("Ahmed", 111111);
+            //phoneBook.Add("Ali", 222222);
+            //// phoneBook.Add(null, 333333);
+
+            //phoneBook.Add("Amr", 33333333);
+            ////phoneBook.Add(33333333, "Amr");
+
+            //var flag = phoneBook.Remove("Ahmed", out long result);
+            //Console.WriteLine(flag);
+            //Console.WriteLine(result);
+
+            //foreach (KeyValuePair<string, long> item in phoneBook)
+            //{
+            //    Console.WriteLine(item);
+            //} 
+            #endregion
+
+
+
 
 
 
