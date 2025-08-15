@@ -1,4 +1,6 @@
-﻿namespace Demo
+﻿using System.Collections;
+
+namespace Demo
 {
     internal class Program
     {
@@ -10,6 +12,26 @@
 
             //Fun01()(); 
             #endregion
+
+            #region Hashtables
+            // Collection : Built-in DS in C#
+
+            // Non-Generic Hashtables : Hashtable
+
+            //Hashtable phoneBook = new Hashtable();
+
+            //phoneBook.Add("Ahmed", 1111);
+            //phoneBook.Add("Ali", 2222);
+            //phoneBook.Add("Amr", 3333);
+            //phoneBook.Add("Omar", 4444);
+            //phoneBook.Add("Bassem", 5555);
+
+            //foreach (DictionaryEntry item in phoneBook)
+            //{
+            //    Console.WriteLine(item);
+            //} 
+            #endregion
+
 
 
 
