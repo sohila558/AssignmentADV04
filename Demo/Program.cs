@@ -51,10 +51,20 @@ namespace Demo
             //} 
             #endregion
 
+            #region Generic Hashtable : Hashset
+            // Generic Hashtable : Hashset
 
+            //HashSet<string> Names = new HashSet<string>();
+            //Names.Add("Ahmed");
+            //Names.Add("Amr");
+            //Names.Add("Ali");
+            //Names.Add("Bassem");
 
-
-
+            //foreach (var item in Names)
+            //{
+            //    Console.WriteLine(item);
+            //} 
+            #endregion
 
 
 
