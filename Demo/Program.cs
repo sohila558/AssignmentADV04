@@ -4,8 +4,18 @@ namespace Demo
 {
     internal class Program
     {
+        //public static var Print(var X)
+        //{
+        //    return X;
+        //}
+        
+        //public static dynamic Print(dynamic X)
+        //{
+        //    return X;
+        //}
         static void Main(string[] args)
         {
+            #region AdvancedC#04
             #region Function Return Function
             //var action = Fun01();
             //action.Invoke();
@@ -66,11 +76,47 @@ namespace Demo
             //} 
             #endregion
 
+            #endregion
+
+            #region Implictly-Type Local Variable [var - dynamic]
+            // Implictly-Type Local Variable [var - dynamic]
+
+            // var
+
+            //var Data01 = "Ahmed";
+
+            // Compilor Can Detect the DataType of the local Variable Based on Initial Value At Compilation Time
+            // Must Be Initialized 
+            // Can't Initialized The local Variable with Null
+            // Can't Change Datatype of the local Varialble After Initialization
+            // Can't Use Var As Parameter Or Return Type 
+
+            // Data01 = 12; // Invalid
+
+            // Dynamic As Var In JS
+
+            //dynamic Data02 = "Ahmed";
+
+            // CLR Detect the Datatype of the Local Variable Based on Last Value, At Runtime
+            // Don't Need to be Initialized 
+            // Can Initialized the Local Variable with Null
+            // Can Change The Local Variable After Initialization
+            // Can Use dynamic Keyword AS a Parameter or return Type 
+
+            //Data02 = 12;
+            //Data02 = 12.5m;
+            //Data02 = 12.5;
+            //Data02 = 12.5f;
+            //Data02 = true; 
+            #endregion
+
+
 
 
 
         }
 
+        #region AdvancedC#04
         public static Action Fun01()
         {
             // Action action = Print;
@@ -82,6 +128,7 @@ namespace Demo
         public static void Print()
         {
             Console.WriteLine("Hello World");
-        }
+        } 
+        #endregion
     }
 }
