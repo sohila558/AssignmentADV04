@@ -130,6 +130,17 @@ namespace Demo
             // Compilor Will Override on ToString 
             #endregion
 
+            #region Extension Methods
+            // Extension Methods
+
+            //int Number = 12345;
+
+            //var Result = intExtention.Reverse(Number); // Class Member Method
+
+            //var Result = Number.Reverse(); // Extention Method
+
+            //Console.WriteLine(Result); 
+            #endregion
 
 
 
