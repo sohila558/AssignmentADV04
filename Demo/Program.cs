@@ -4,15 +4,17 @@ namespace Demo
 {
     internal class Program
     {
+        #region Implictly-Type Local Variable [var - dynamic]
         //public static var Print(var X)
         //{
         //    return X;
         //}
-        
+
         //public static dynamic Print(dynamic X)
         //{
         //    return X;
-        //}
+        //} 
+        #endregion
         static void Main(string[] args)
         {
             #region AdvancedC#04
@@ -109,6 +111,25 @@ namespace Demo
             //Data02 = 12.5f;
             //Data02 = true; 
             #endregion
+
+            #region Anonymous Type
+            // Anonymous Type
+
+            // Employee E01 = new Employee() { Id = 1, Name = "Sohila", Salary = 15000 };
+            //var E01 = new { Id = 1, Name = "Sohila", Salary = 15000 };
+
+            //Console.WriteLine(E01.Id);
+            //Console.WriteLine(E01.Name);
+            //Console.WriteLine(E01.Salary);
+
+            ////E01.Id = 12; // Invalid : Immutable Can't Change It's Value After Creation
+
+            //Console.WriteLine(E01.GetType().Name); // <>f__AnonymousType0`3
+
+            //Console.WriteLine(E01); // { Id = 1, Name = Sohila, Salary = 15000 }
+            // Compilor Will Override on ToString 
+            #endregion
+
 
 
 

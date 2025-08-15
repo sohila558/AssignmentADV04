@@ -5,6 +5,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{55953654-A5EE-4ED5-BF66-3D64503C6EC5}|Demo\\Demo.csproj|c:\\users\\mahmoud rayan\\desktop\\assignments\\oop\\advanced\\adv04\\demo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{55953654-A5EE-4ED5-BF66-3D64503C6EC5}|Demo\\Demo.csproj|solutionrelative:demo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55953654-A5EE-4ED5-BF66-3D64503C6EC5}|Demo\\Demo.csproj|c:\\users\\mahmoud rayan\\desktop\\assignments\\oop\\advanced\\adv04\\demo\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55953654-A5EE-4ED5-BF66-3D64503C6EC5}|Demo\\Demo.csproj|solutionrelative:demo\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,13 +26,26 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\Users\\Mahmoud Rayan\\Desktop\\Assignments\\OOP\\Advanced\\ADV04\\Demo\\Employee.cs",
+              "RelativeDocumentMoniker": "Demo\\Employee.cs",
+              "ToolTip": "C:\\Users\\Mahmoud Rayan\\Desktop\\Assignments\\OOP\\Advanced\\ADV04\\Demo\\Employee.cs",
+              "RelativeToolTip": "Demo\\Employee.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-15T16:03:07.241Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Mahmoud Rayan\\Desktop\\Assignments\\OOP\\Advanced\\ADV04\\Demo\\Program.cs",
               "RelativeDocumentMoniker": "Demo\\Program.cs",
-              "ToolTip": "C:\\Users\\Mahmoud Rayan\\Desktop\\Assignments\\OOP\\Advanced\\ADV04\\Demo\\Program.cs",
-              "RelativeToolTip": "Demo\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAmAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Mahmoud Rayan\\Desktop\\Assignments\\OOP\\Advanced\\ADV04\\Demo\\Program.cs*",
+              "RelativeToolTip": "Demo\\Program.cs*",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAAAHUAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-14T13:18:40.518Z",
               "EditorCaption": ""
