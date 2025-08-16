@@ -142,6 +142,37 @@ namespace Demo
             //Console.WriteLine(Result); 
             #endregion
 
+            #region What Is LINQ ?
+            // LINQ : Language Integrated Query
+            //      : 40+ Extension Methods (LINQ Operators) Against Any Data [Data In Sequence]
+            //      : Regardless Data Store
+            //      : 13 Category 
+            //      : LINQ Operators Exist In Built-In Class "Enumerable"
+
+            // Sequence : Object From Class Implement Interface "IEnumerable"
+            // Local Sequence  : L2O, L2XML 
+            // Remote Sequence : L2EF
+
+            // Input Sequence --> LINQ Operator --> Output Sequence
+            // Input Sequence --> LINQ Operator --> One Value 
+            //                --> LINQ Operator --> Output Sequence
+
+
+            // Input Sequence --> LINQ Operator --> Output Sequence
+
+            //List<int> Numbers = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+            //var Result = Enumerable.Range(1, 100);
+            //var Result = Enumerable.Any(Numbers, N => N % 2 == 0);
+
+            //Console.WriteLine(Result);
+
+            //foreach (var item in Result)
+            //{
+            //    Console.Write($"{item}");
+            //} 
+            #endregion
+
 
 
 
