@@ -215,7 +215,33 @@ namespace Demo
             //} 
             #endregion
 
+            #region LINQ Query Execution
+            // LINQ Query Execution
+            // 1. Differed Execution Way  : 10 Category
+            // 2. Immediate Execution Way : 3 Category [Elements Operators, Casting Operators, Aggregate Operators]
 
+            //List<int> Numbers = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+            //var Result = Numbers.Where(N => N % 2 == 0); // Differed
+
+            //Numbers.AddRange(new int[] { 11, 12, 13, 14, 15});
+
+            //foreach (var item in Result)
+            //{
+            //    Console.Write($"{item} ");
+            //}
+
+            //List<int> Numbers = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+            //var Result = Numbers.Where(N => N % 2 == 0).ToList(); // Immediate
+
+            //Numbers.AddRange(new int[] { 11, 12, 13, 14, 15 });
+
+            //foreach (var item in Result)
+            //{
+            //    Console.Write($"{item} ");
+            //} 
+            #endregion
 
 
 
