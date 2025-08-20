@@ -352,6 +352,75 @@ namespace Demo
             //} 
             #endregion
 
+            #region Ordering Operators
+
+            // Ordering Operators
+
+            // Sorting
+
+            //var result = ListGenerator.ProductList.OrderBy(P => P.UnitPrice);
+            //var result = ListGenerator.ProductList.OrderBy(P => P.UnitPrice)
+            //    .Select(P => new
+            //    {
+            //        P.ProductName,
+            //        P.UnitPrice,
+            //        P.UnitsInStock
+            //    });
+
+            //var result = ListGenerator.ProductList.OrderByDescending(P => P.UnitPrice)
+            //    .Select(P => new
+            //    {
+            //        P.ProductName,
+            //        P.UnitPrice,
+            //        P.UnitsInStock
+            //    });
+
+            //var result = ListGenerator.ProductList.OrderByDescending(P => P.UnitsInStock)
+            //    .ThenBy(P => P.UnitPrice)
+            //    .Select(P => new
+            //    {
+            //        P.ProductName,
+            //        P.UnitPrice,
+            //        P.UnitsInStock
+            //    });
+
+            //var result = ListGenerator.ProductList.OrderByDescending(P => P.UnitsInStock)
+            //    .ThenByDescending(P => P.UnitPrice)
+            //    .Select(P => new
+            //    {
+            //        P.ProductName,
+            //        P.UnitPrice,
+            //        P.UnitsInStock
+            //    });
+
+            //var result = ListGenerator.ProductList.Where(P => P.Category == "Seafood")
+            //                                      .OrderBy(P => P.UnitsInStock)
+            //                                      .ThenByDescending(P => P.UnitPrice)
+            //                                      .Select(P => new
+            //                                      {
+            //                                          P.ProductName,
+            //                                          P.UnitPrice,
+            //                                          P.UnitsInStock
+            //                                      });
+
+            //var result = from P in ListGenerator.ProductList
+            //             where P.Category == "Meat/Poltury" && P.UnitsInStock > 0
+            //             orderby P.UnitPrice, P.UnitsInStock
+            //             select new
+            //             {
+            //                 P.ProductName,
+            //                 P.UnitPrice,
+            //                 P.UnitsInStock
+            //             };
+
+            //var result = ListGenerator.ProductList.Reverse<Product>();
+
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //} 
+            #endregion
+
 
 
 
