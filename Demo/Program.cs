@@ -1,6 +1,7 @@
 ﻿using AssignmentADV04.Task;
 using System.Collections;
 using System.Diagnostics;
+using System.Linq;
 
 namespace Demo
 {
@@ -291,6 +292,59 @@ namespace Demo
             //ArrayList arrayList = new ArrayList() { 1, 2, 3, "Ahmed", "Ali", 1.3, 1.5, 1.7f, 1.8f, 2.3m, 4.5m, ProductList[0], ProductList[1] };
 
             //var result = arrayList.OfType<int>();
+
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //} 
+            #endregion
+
+            #region Tansformation Operator - Select / SelectMany
+
+            // 2. Tansformation Operator - Select / SelectMany
+
+            // Fluent Syntax
+
+            //var result = ListGenerator.ProductList.Select(P => P);
+
+            //var result = ListGenerator.ProductList.Select(P => P.ProductName);
+
+            // Query Syntax
+
+            //var result = from P in ListGenerator.ProductList
+            //             select P.ProductName;
+
+            //var result = ListGenerator.ProductList.Where(P => P.UnitsInStock > 0 && P.Category == "Seafood")
+            //                          .Select(P => new 
+            //                          { 
+            //                              P.ProductName,
+            //                              P.Category,
+            //                              OldPrice = P.UnitPrice,
+            //                              NewPrice = P.UnitPrice - P.UnitPrice * 0.1M
+            //                          });
+
+            //var result = from P in ListGenerator.ProductList
+            //             where P.UnitsInStock > 0 && P.Category == "Seafood"
+            //             select new
+            //             {
+            //                 P.ProductName,
+            //                 P.Category,
+            //                 OldPrice = P.UnitPrice,
+            //                 NewPrice = P.UnitPrice - P.UnitPrice * 0.1M
+            //             };
+
+            //var result = ListGenerator.CustomerList.Select(C => C.CustomerName);
+            //var result = ListGenerator.CustomerList.Select(C => C.Orders); // If one Of the Property is Sequence We use SelectMany
+
+            //var result = ListGenerator.CustomerList.SelectMany(C => C.Orders);
+
+            //var result = from C in ListGenerator.CustomerList
+            //             from O in C.Orders
+            //             select O;
+
+            // Indexed Select Valid only In Fluent Syntax
+
+            //var result = ListGenerator.ProductList.Select((P, I) => new { I, P.ProductName }).Where(P => P.I < 5);
 
             //foreach (var item in result)
             //{
