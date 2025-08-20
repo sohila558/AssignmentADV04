@@ -421,6 +421,65 @@ namespace Demo
             //} 
             #endregion
 
+            #region Elements Operator - Immediate Execution
+            
+            // 4. Elements Operator - Immediate Execution
+
+            //var result = ListGenerator.ProductList.First(); // May Throw Exception [Sequence Contain No Elements]
+            //var result = ListGenerator.ProductList.Last(); // May Throw Exception [Sequence Contain No Elements]
+
+            //var result = ListGenerator.ProductList.First(P => P.UnitsInStock == 0); // May Throw Exception [Sequence Contains Matching No Elements]
+            //var result = ListGenerator.ProductList.Last(P => P.UnitsInStock == 0); // May Throw Exception [Sequence Contains No Matching Elements]
+
+            //var result = ListGenerator.ProductList.FirstOrDefault();
+            //var result = ListGenerator.ProductList.FirstOrDefault(new Product() { ProductName = "Default Product"});
+            //var result = ListGenerator.ProductList.FirstOrDefault(P => P.UnitsInStock == 1000);
+            //var result = ListGenerator.ProductList.FirstOrDefault(P => P.UnitsInStock == 1000, new Product() { ProductName = "Default Product" });
+
+
+
+            //var result = ListGenerator.ProductList.LastOrDefault();
+            //var result = ListGenerator.ProductList.LastOrDefault(new Product() { ProductName = "Default Product" });
+            //var result = ListGenerator.ProductList.LastOrDefault(P => P.UnitsInStock == 0);
+            //var result = ListGenerator.ProductList.LastOrDefault(P => P.UnitsInStock == 1000, new Product() { ProductName = "Default Product" });
+
+
+            //var result = ListGenerator.ProductList.ElementAt(0); // May Throw Exception [Index was out of Range]
+            //var result = ListGenerator.ProductList.ElementAtOrDefault(1); 
+
+
+
+            //var result = ListGenerator.ProductList.Single(); // May Throw Exception
+            // Sequence Contain more than one Element
+            // Sequence Contain no Elements
+
+            //var result = ListGenerator.ProductList.Single(P => P.UnitsInStock == 0); // May Throw Exception
+            // Sequence Contain more than one Element matching Condition
+            // Sequence Contain no Elements
+
+            //var result = ListGenerator.ProductList.SingleOrDefault(); // May Throw Exception
+            // Sequence Contain more than one Element
+            // REturn Default Value [Null] if the Sequence is Empty
+
+            //var result = ListGenerator.ProductList.SingleOrDefault(); // May Throw Exception
+            // Sequence Contain more than one Element
+            // REturn Default Value [Null] if the Sequence is Empty
+
+
+
+            //var result = ListGenerator.ProductList.SingleOrDefault(P => P.UnitsInStock == 0); // May Throw Exception
+            // Sequence Contain more than one Element
+            // REturn Default Value [Null] if the Sequence is Empty
+
+
+            //var result = ListGenerator.ProductList.SingleOrDefault(P => P.UnitsInStock == 0); // May Throw Exception
+            // Sequence Contain more than one Element
+            // REturn Default Value [Null] if the Sequence is Empty
+
+            //Console.WriteLine(result?.ProductName ?? "NA"); 
+            #endregion
+
+
 
 
 
