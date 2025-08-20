@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿using AssignmentADV04.Task;
+using System.Collections;
+using System.Diagnostics;
 
 namespace Demo
 {
@@ -79,6 +81,8 @@ namespace Demo
             #endregion
 
             #endregion
+
+            #region LINQ Session 1
 
             #region Implictly-Type Local Variable [var - dynamic]
             // Implictly-Type Local Variable [var - dynamic]
@@ -242,6 +246,59 @@ namespace Demo
             //    Console.Write($"{item} ");
             //} 
             #endregion
+
+            #endregion
+
+            // LINQ: +40 Extension Methods
+            // LINQ: 13 Category
+
+            #region Filtration Operators - Where / OfType
+
+            // 1. Filtration Operators - Where / OfType
+
+            // All Product Out Stock
+
+
+            // Fluent Syntax
+            //var result = ListGenerator.ProductList.Where(P => P.UnitsInStock == 0);
+
+            // Query Syntax [Query Expression]
+
+            //var result = from P in ListGenerator.ProductList
+            //             where P.UnitsInStock == 0
+            //             select P;
+
+
+            //var result = ListGenerator.ProductList.Where(P => P.Category == "Meat/Poultry");
+
+            //var result = from P in ListGenerator.ProductList
+            //             where P.Category == "Meat/Poultry"
+            //             select P;
+
+            //var result = ListGenerator.ProductList.Where(P => P.UnitsInStock > 0).Where(P => P.Category == "Meat/Poultry");
+
+            //var result = ListGenerator.ProductList.Where(P => P.UnitsInStock > 0 && P.Category == "Meat/Poultry");
+
+            //var result = from P in ListGenerator.ProductList
+            //             where P.UnitsInStock > 0 && P.Category == "Meat/Poultry"
+            //             select P;
+
+            //var result = ListGenerator.ProductList.Where((P, Index) => Index < 10 && P.UnitsInStock == 0);
+            //var result = ListGenerator.ProductList.Where((P, Index) => Index < 5);
+            //var result = ListGenerator.ProductList.Where((P, Index) => Index < 5 && P.UnitsInStock == 0);
+            //var result = ListGenerator.ProductList.Where(P => P.UnitsInStock > 0).Where((P,I) => I < 5);
+
+            //ArrayList arrayList = new ArrayList() { 1, 2, 3, "Ahmed", "Ali", 1.3, 1.5, 1.7f, 1.8f, 2.3m, 4.5m, ProductList[0], ProductList[1] };
+
+            //var result = arrayList.OfType<int>();
+
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //} 
+            #endregion
+
+
 
 
 
