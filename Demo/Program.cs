@@ -523,7 +523,27 @@ namespace Demo
             //} 
             #endregion
 
+            #region Generation Operators
+            // 7. Generation Operators
+            // The Only Way To Call This Method as -> Class Member Method Through "Enumerable" Class
 
+            // Range, Empty, Repeat 
+
+            //var res = Enumerable.Range(1, 100);
+
+            //var res = Enumerable.Empty<Product>().ToList();
+
+            //res.Add(new Product() { ProductName = "Product01" });
+            //res.Add(new Product() { ProductName = "Product02" });
+
+            //var res = Enumerable.Repeat(ProductList[0], 3);  
+            //var res = Enumerable.Repeat(1, 3);
+
+            //foreach (var item in res)
+            //{
+            //    Console.WriteLine(res);
+            //} 
+            #endregion
 
 
 
