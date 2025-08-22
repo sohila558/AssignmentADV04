@@ -566,6 +566,45 @@ namespace Demo
             //} 
             #endregion
 
+            #region Quantifier Operators
+            // 9. Quantifier Operators - Return Boolean
+
+            // Any - All - SequenceEqual - Contains
+
+            //var Seq01 = Enumerable.Range(1, 100);
+            //var Seq02 = Enumerable.Range(50, 100);
+
+            // Any() --> Return True if There Are  At Least one Element [In The Sequence Or Match The Condition]
+
+            //var res = Seq01.Any(N => N % 2 == 0);
+
+            // ProductList = new List<Product>(); 
+
+            //var res = ListGenerator.ProductList.Any();
+            //var res = ListGenerator.ProductList.Any(P => P.UnitsInStock == 0);
+
+            // All() --> Return True if All Element in the Sequence Match The Conditions Or Sequence Is Empty
+
+            //var res = ListGenerator.ProductList.All(P => P.UnitsInStock == 0);            
+            //var res = ListGenerator.ProductList.All(P => P.UnitPrice > 0);
+
+            // SequenceEqual()
+
+            //var res = Seq01.SequenceEqual(Seq02);
+
+            //var res = Seq02.Contains(1);
+
+            //var res = ListGenerator.ProductList.Contains();
+
+            //Console.WriteLine(res); 
+            #endregion
+
+
+
+
+
+
+
 
 
 
