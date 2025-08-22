@@ -422,7 +422,7 @@ namespace Demo
             #endregion
 
             #region Elements Operator - Immediate Execution
-            
+
             // 4. Elements Operator - Immediate Execution
 
             //var result = ListGenerator.ProductList.First(); // May Throw Exception [Sequence Contain No Elements]
@@ -477,6 +477,33 @@ namespace Demo
             // REturn Default Value [Null] if the Sequence is Empty
 
             //Console.WriteLine(result?.ProductName ?? "NA"); 
+            #endregion
+
+            #region Aggregate Operators - Immediate Execution
+            // 5. Aggregate Operators - Immediate Execution
+
+            // Count - Sum - Max - Min - Avg
+
+            //var result = ListGenerator.ProductList.Count();
+
+            //var result = ListGenerator.ProductList.Count(P => P.UnitsInStock == 0);
+
+
+            //var result = ListGenerator.ProductList.Where(P => P.UnitsInStock == 0).Count();
+
+            // Sum
+
+            //var result = ListGenerator.ProductList.Sum(P => P.UnitPrice);
+
+            // AVG
+
+            //var result = ListGenerator.ProductList.Average(P => P.UnitPrice);
+
+            // Max
+
+            //var result = ListGenerator.ProductList.Max(P => P.UnitPrice);
+
+            //Console.WriteLine(result); 
             #endregion
 
 
