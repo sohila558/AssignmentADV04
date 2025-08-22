@@ -616,8 +616,47 @@ namespace Demo
             //} 
             #endregion
 
+            #region Groupping Operators
+            // Groupping Operators
+
+            //var res = ListGenerator.ProductList.GroupBy(P => P.Category);
+
+            //res = from P in ListGenerator.ProductList
+            //      group P by P.Category;
+
+            //foreach (var Category in res)
+            //{
+            //    Console.WriteLine(Category.Key);
+
+            //    foreach (var Product in Category)
+            //    {
+            //        Console.WriteLine(Product);
+            //    }
+            //}
+
+            //var result = from P in ListGenerator.ProductList
+            //             where P.UnitsInStock > 0
+            //             group P by P.Category
+            //             into Category
+            //             where Category.Count() > 10
+            //             select new { CategoryName = Category.Key, CountOfCategory = Category.Count() };
 
 
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            //foreach (var Category in result)
+            //{
+            //    Console.WriteLine(Category.Key);
+
+            //    foreach (var Product in Category)
+            //    {
+            //        Console.WriteLine(Product);
+            //    }
+            //} 
+            #endregion
 
         }
 
