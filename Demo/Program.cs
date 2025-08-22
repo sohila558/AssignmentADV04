@@ -545,7 +545,26 @@ namespace Demo
             //} 
             #endregion
 
+            #region Set Operators - Union Family
+            // 8. Set Operators - Union Family
+            // Union - union All - Intersect - Except
 
+            //var Seq01 = Enumerable.Range(1, 100);
+            //var Seq02 = Enumerable.Range(50, 100);
+
+            //var res = Seq01.Union(Seq02); // Like Union In SQL Without Duplication
+            //var res = Seq01.Concat(Seq02); // Like Union All In SQL Without Duplication
+            //var res = Seq01.Concat(Seq02); // Like Union In SQL Without Duplication
+            //res = res.Distinct(); // Remove Duplication
+            //var res = Seq01.Intersect(Seq02); // 50 -- 100
+            //var res = Seq01.Except(Seq02); // 101 -- 149
+
+
+            //foreach (var item in res)
+            //{
+            //    Console.WriteLine(res);
+            //} 
+            #endregion
 
 
 
