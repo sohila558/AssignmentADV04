@@ -658,6 +658,31 @@ namespace Demo
             //} 
             #endregion
 
+            #region Partitioning Operator
+            // Partitioning Operator - Take, TakeLast, Skip, SkipLast, TakeWhile, SkipWhile
+
+            //var Result = ListGenerator.ProductList.Where(P => P.UnitsInStock == 0).Take(3);
+            //var Result = ListGenerator.ProductList.Where(P => P.UnitsInStock == 0).TakeLast(3);
+
+            //var Result = ListGenerator.ProductList.Skip(5).Take(5);
+            //var Result = ListGenerator.ProductList.SkipLast(5);
+
+            //int[] Numbers = { 4, 1, 2, 3, 4, 5 };
+            //var Result = Numbers.TakeWhile((N) => N % 3 == 0);
+            //var Result = Numbers.SkipWhile((N) => N % 3 == 0);
+
+            //int[] Numbers = { 5, 4, 1, 3, 9, 6, 7, 2, 0 };
+
+            //var Result = Numbers.TakeWhile((N, I) => N > I);
+            //var Result = Numbers.SkipWhile((N, I) => N > I);
+
+            //foreach (var item in Result)
+            //{
+            //    Console.WriteLine(item);
+            //} 
+            #endregion
+
+
         }
 
         #region AdvancedC#04
