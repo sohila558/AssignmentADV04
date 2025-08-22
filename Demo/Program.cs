@@ -566,7 +566,7 @@ namespace Demo
             //} 
             #endregion
 
-            #region Quantifier Operators
+            #region Quantifier Operators - Return Boolean
             // 9. Quantifier Operators - Return Boolean
 
             // Any - All - SequenceEqual - Contains
@@ -599,12 +599,22 @@ namespace Demo
             //Console.WriteLine(res); 
             #endregion
 
+            #region Zipping Operator
+            // 10. Zipping Operator
+            // Zip
 
+            //List<string> Words = new List<string> { "Ten", "Twenty", "Thirty", "Fourty" };
 
+            //List<int> Numbers = new List<int> { 10, 20, 30, 40, 50, 60 };
 
+            //var result = Words.Zip(Numbers, (W, N) => $"{N} --> {W}");
+            //var result = Words.Zip(Numbers, (W, N) => new {Numbers = N, Word = W});
 
-
-
+            //foreach (var item in Words)
+            //{
+            //    Console.WriteLine(item);
+            //} 
+            #endregion
 
 
 
