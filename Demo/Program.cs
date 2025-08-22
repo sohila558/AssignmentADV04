@@ -506,6 +506,26 @@ namespace Demo
             //Console.WriteLine(result); 
             #endregion
 
+            #region Casting Operators - Immediate Execution
+            // 6. Casting Operators - Immediate Execution
+
+            //List<Product> list = (List<Product>)ListGenerator.ProductList.Where(P => P.UnitsInStock == 0); // Invalid
+
+            //List<Product> list = ListGenerator.ProductList.Where(P => P.UnitsInStock == 0).ToList();
+            //Product[] list = ListGenerator.ProductList.Where(P => P.UnitsInStock == 0).ToArray();
+            //Dictionary<long, Product> list = ListGenerator.ProductList.Where(P => P.UnitsInStock == 0).ToDictionary(P => P.ProductID);
+            //HashSet<Product> list = ListGenerator.ProductList.Where(P => P.UnitsInStock == 0).ToHashSet();
+
+
+            //foreach (var item in list)
+            //{
+            //    Console.WriteLine(list);
+            //} 
+            #endregion
+
+
+
+
 
 
 
