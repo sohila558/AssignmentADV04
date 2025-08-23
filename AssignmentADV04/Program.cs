@@ -434,6 +434,67 @@ namespace AssignmentADV04
 
             #endregion
 
+            #region LINQ - Partitioning Operators
+
+            #region 1. Get the first 3 orders from customers in Washington
+
+            //var Result = ListGenerator.CustomerList.Where(C => C.Region == "WA").Take(3);
+
+            //var Result = from C in ListGenerator.CustomerList
+            //             where C.Region == "WA"
+            //             select C;
+
+            //foreach (var item in Result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            #endregion
+
+            #region 2. Get all but the first 2 orders from customers in Washington.
+
+            //var Result = ListGenerator.CustomerList.Where(C => C.Region == "WA").SelectMany(C => C.Orders).Skip(2);
+
+            //var Result = (from C in ListGenerator.CustomerList
+            //              where C.Region == "WA"
+            //              from O in C.Orders
+            //              select O).Skip(2);
+
+            //foreach (var item in Result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            #endregion
+
+            #region 3. Return elements starting from the beginning of the array until a number is hit that is less than its position in the array.
+
+            //int[] numbers = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 };
+
+            //var Result = numbers.TakeWhile((N, I) => N > I);
+
+            //foreach (var item in Result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            #endregion
+
+            #region 4.Get the elements of the array starting from the first element divisible by 3.
+
+            //int[] numbers = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 };
+
+            //var Result = numbers.SkipWhile(N => N % 3 != 0);
+
+            //foreach (var item in Result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            #endregion
+
+            #endregion
+
         }
     }
 }
