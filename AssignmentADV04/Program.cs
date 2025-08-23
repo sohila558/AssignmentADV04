@@ -1,5 +1,7 @@
 ﻿using AssignmentADV04.Task;
+using System.Collections.Frozen;
 using System.ComponentModel.DataAnnotations;
+using System.Threading;
 
 namespace AssignmentADV04
 {
@@ -181,6 +183,74 @@ namespace AssignmentADV04
             #endregion
 
             #endregion
+
+            #region LINQ - Ordering Operators
+
+            #region 1. Sort a list of products by name
+
+            //var Result = ListGenerator.ProductList.OrderBy(P => P.ProductName); 
+
+            //PrintProducts(Result);
+
+            #endregion
+
+            #region 2. Sort a list of products by units in stock from highest to lowest.
+
+            //var Result = ListGenerator.ProductList.OrderByDescending(P => P.UnitsInStock);
+
+            //PrintProducts(Result);
+
+            #endregion
+
+            #region 3. Sort a list of digits, first by length of their name, and then alphabetically by the name itself.
+
+            //string[] Arr = { "zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine" };
+
+            //var Result = Arr.OrderBy(A => A.Length).ThenBy(A => A);
+
+            //foreach (var item in Result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            #endregion
+
+            #region 4. Sort a list of products, first by category, and then by unit price, from highest to lowest.
+
+            //var Result = ListGenerator.ProductList.OrderByDescending(P => P.Category).ThenByDescending(P => P.UnitPrice);
+
+            //PrintProducts(Result);
+
+            #endregion
+
+            #region 5. Sort first by-word length and then by a case-insensitive descending sort of the words in an array.
+
+            //string[] Arr = { "aPPLE", "AbAcUs", "bRaNcH", "BlUeBeRrY", "ClOvEr", "cHeRry" };
+
+            //var Result = Arr.OrderBy(W => W.Length).ThenByDescending(W => W, StringComparer.OrdinalIgnoreCase);
+
+            //foreach (var item in Result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            #endregion
+
+            #region 6. Create a list of all digits in the array whose second letter is 'i' that is reversed from the order in original array.
+
+            //string[] Arr = { "zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine" };
+
+            //var Result = Arr.Where(word => word.Length > 1 && word[1] == 'i').Reverse();                                       // نعكس الترتيب
+
+            //foreach (var item in Result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            #endregion
+
+            #endregion
+
         }
     }
 }
