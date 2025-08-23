@@ -1,6 +1,11 @@
 ﻿using System.Collections.Frozen;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using System.Data.SqlTypes;
+using System.Runtime.Intrinsics.Arm;
+using System.Runtime.Intrinsics.X86;
 using System.Threading;
+using static System.Net.Mime.MediaTypeNames;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace AssignmentADV04
@@ -490,6 +495,99 @@ namespace AssignmentADV04
             //{
             //    Console.WriteLine(item);
             //}
+
+            #endregion
+
+            #endregion
+
+            #region LINQ - Quantifiers
+
+            #region 1. Determine if any of the words in dictionary_english.txt (Read dictionary_english.txt into Array of String First) contain the substring 'ei'.
+
+            //string[] Words = { "dictionary", "_", "english", ".", "txt" };
+
+            //var Result = Words.Where(W => W.Contains("ei"));
+
+            //var Result = from W in Words
+            //             where W.Contains("ei")
+            //             select W;
+
+            //foreach (var item in Result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            #endregion
+
+            #region 2. Return a grouped a list of products only for categories that have at least one product that is out of stock.
+
+            //var Result = ListGenerator.ProductList.GroupBy(P => P.Category)                               
+            //                                      .Where(g => g.Any(P => P.UnitsInStock == 0))            
+            //                                      .Select(g => new
+            //                                      {
+            //                                          Category = g.Key,
+            //                                          Products = g.ToList()
+            //                                      });
+
+            //var Result = from P in ListGenerator.ProductList
+            //             group P by P.Category into g
+            //             where g.Any(p => p.UnitsInStock == 0)                  
+            //             select new
+            //             {
+            //                 Category = g.Key,
+            //                 Products = g.ToList()
+            //             };
+
+            //foreach (var item in Result)
+            //{
+            //    Console.WriteLine($"Category : {item.Category}");
+            //    Console.WriteLine();
+            //    foreach (var Product in item.Products)
+            //    {
+            //        Console.WriteLine($"{Product.ProductName} : {Product.UnitsInStock}");
+            //    }
+            //    Console.WriteLine();
+            //}
+
+            #endregion
+
+            #region 3. Return a grouped a list of products only for categories that have all of their products in stock.
+
+            //var Result = ListGenerator.ProductList.GroupBy(P => P.Category)
+            //                                      .Where(G => G.All(P => P.UnitsInStock > 0))   
+            //                                      .Select(G => new
+            //                                      {
+            //                                          Category = G.Key,
+            //                                          Products = G.ToList()
+            //                                      });
+
+            //var Result = from P in ListGenerator.ProductList
+            //             group P by P.Category into G
+            //             where G.All(P => P.UnitsInStock > 0)           
+            //             select new
+            //             {
+            //                 Category = G.Key,
+            //                 Products = G.ToList()
+            //             };
+
+            //foreach (var item in Result)
+            //{
+            //    Console.WriteLine($"Category: {item.Category}");
+            //    Console.WriteLine();
+            //    foreach (var Product in item.Products)
+            //    {
+            //        Console.WriteLine($"{Product.ProductName} : {Product.UnitsInStock}");
+            //    }
+            //    Console.WriteLine();
+            //}
+
+            #endregion
+
+            #endregion
+
+            #region LINQ – Grouping Operators
+
+            #region 1. Uses group by to partition a list of words by their first letter. Use dictionary_english.txt for Input
 
             #endregion
 
