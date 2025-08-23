@@ -26,6 +26,10 @@ namespace AssignmentADV04
 
             #region 2. Find all products that are in stock and cost more than 3.00 per unit.
 
+            //var Result = ListGenerator.ProductList.Where(P => P.UnitsInStock > 0 && P.UnitPrice > 3);
+
+            //PrintProducts(Result);
+
             #endregion
 
             #endregion
