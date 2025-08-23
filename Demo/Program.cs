@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Diagnostics;
 using System.Linq;
+using System.Text.RegularExpressions;
 
 namespace Demo
 {
@@ -658,7 +659,7 @@ namespace Demo
             //} 
             #endregion
 
-            #region Partitioning Operator
+            #region Partitioning Operator - Take, TakeLast, Skip, SkipLast, TakeWhile, SkipWhile
             // Partitioning Operator - Take, TakeLast, Skip, SkipLast, TakeWhile, SkipWhile
 
             //var Result = ListGenerator.ProductList.Where(P => P.UnitsInStock == 0).Take(3);
@@ -681,6 +682,34 @@ namespace Demo
             //    Console.WriteLine(item);
             //} 
             #endregion
+
+            #region Let - Into
+            // Let - Into
+
+            //List<string> Names = new List<string>() { "Ahmed", "Ali", "Mohamed", "Mona", "Aya", "Mariam", "Tuqqaa", "Sally", "Mahmoud", "Osama" };
+
+            //var Result = from Name in Names
+            //             select Regex.Replace(Name, "[aeouiAEUIO]", string.Empty)
+            //             into NoVolesNames
+            //             where NoVolesNames.Length > 3
+            //             select NoVolesNames;
+
+
+            //var Result = from Name in Names
+            //             let NoVolesNames = Regex.Replace(Name, "[aeouiAEUIO]", string.Empty)
+            //             where NoVolesNames.Length > 3
+            //             select NoVolesNames;
+
+
+            //foreach (var item in Result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            //Regex.Replace("Ahmed", "[aeouiAEUIO]", string.Empty);
+
+            #endregion
+
 
 
         }
