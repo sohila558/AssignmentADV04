@@ -251,6 +251,8 @@ namespace Demo
 
             #endregion
 
+            #region LINQ Session 2
+
             // LINQ: +40 Extension Methods
             // LINQ: 13 Category
 
@@ -708,6 +710,7 @@ namespace Demo
 
             //Regex.Replace("Ahmed", "[aeouiAEUIO]", string.Empty);
 
+            #endregion 
             #endregion
 
 
