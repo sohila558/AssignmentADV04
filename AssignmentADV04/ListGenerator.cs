@@ -5,8 +5,66 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 
-namespace AssignmentADV04.Task
+namespace AssignmentADV04
 {
+    internal class Order
+    {
+        public int OrderID { get; set; }
+        public DateTime OrderDate { get; set; }
+        public decimal Total { get; set; }
+
+        public Order(int orderID, DateTime orderDate, decimal total)
+        {
+            OrderID = orderID;
+            OrderDate = orderDate;
+            Total = total;
+        }
+        public Order()
+        {
+
+        }
+
+        public override string ToString()
+            => $"Order Id: {OrderID}, Date: {OrderDate.ToShortDateString()}, Total: {Total}";
+    }
+
+    internal class Product
+    {
+        public long ProductID { get; set; }
+        public string ProductName { get; set; }
+        public string Category { get; set; }
+        public decimal UnitPrice { get; set; }
+        public int UnitsInStock { get; set; }
+
+        public override string ToString()
+            => $"ProductID: {ProductID}, ProductName: {ProductName}, Category: {Category}, UnitPrice: {UnitPrice:c}, UnitsInStock: {UnitsInStock}";
+    }
+    internal class Customer
+    {
+        public string CustomerID { get; set; }
+        public string CustomerName { get; set; }
+        public string Address { get; set; }
+        public string City { get; set; }
+        public string Region { get; set; }
+        public string PostalCode { get; set; }
+        public string Country { get; set; }
+        public string Phone { get; set; }
+        public string Fax { get; set; }
+        public Order[] Orders { get; set; }
+
+        public Customer(string customerID, string customerName)
+        {
+            CustomerID = customerID;
+            CustomerName = customerName;
+            Orders = new Order[10];
+        }
+        public Customer()
+        {
+
+        }
+        public override string ToString()
+            => $"{CustomerID}, {CustomerName}, {Address}, {City}, {Region}, {PostalCode}, {Country}, {Phone}, {Fax}";
+    }
     internal static class ListGenerator
     {
         public static List<Product> ProductList { get; set; }
