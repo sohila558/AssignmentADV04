@@ -589,6 +589,34 @@ namespace AssignmentADV04
 
             #region 1. Uses group by to partition a list of words by their first letter. Use dictionary_english.txt for Input
 
+            //string[] Arr = { "dictionary", "_", "english", ".", "txt" };
+
+            //var Result = Arr.GroupBy(W => W[0]) 
+            //                        .Select(G => new
+            //                        {
+            //                            FirstLetter = G.Key,
+            //                            Words = G.ToList()
+            //                        });
+
+            //var Result = from W in Arr
+            //             group W by W[0] into G
+            //             select new
+            //             {
+            //                 FirstLetter = G.Key,
+            //                 Words = G.ToList()
+            //             };
+
+
+            //foreach (var item in Result)
+            //{
+            //    Console.WriteLine($"First Letter: {item.FirstLetter}");
+            //    foreach (var Word in item.Words)
+            //    {
+            //        Console.WriteLine($"{Word}");
+            //    }
+            //}
+
+
             #endregion
 
             #endregion
